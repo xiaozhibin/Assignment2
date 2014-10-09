@@ -7,7 +7,7 @@
 
 ###3. 获取github上的代码：
 + 在一个单独的文件夹中，例如E:\git，按住shift同时右键，选择在此处打开命令窗口。依次输入以下命令
-+ git clone https://github.com/vis2014/Assignment2.git		//克隆代码
++ git clone https://github.com/vis2014/Assignment2.git		//克隆代码,username是vis2014@163.com, password是vis_2014
 + cd Assignment2		//进入文件夹Assignment2
 + git checkout –b *local_name* origin/master	//创建自己的分支，*注意*：local_name替换为自己的名字，格式为LastnameFirstname_LastnameFirstname_A2 
 
@@ -18,6 +18,6 @@
 ###6. 在以上步骤完成之后可以上传代码，按住shift同时右键，选择在此处打开命令窗口。依次输入以下命令
 + git add . 	//添加文件
 + git commit -m "注释" //提交到本地
-+ git push origin *local_name*	//*注意*：和第三步一样，local_name替换为自己的名字，格式为LastnameFirstname_LastnameFirstname_A2，要和上面的local_name保持一致
++ git push origin *local_name*	//*注意*：和第三步一样，local_name替换为自己的名字，格式为LastnameFirstname_LastnameFirstname_A2，要和上面的local_name保持一致,username是vis2014@163.com, password是vis_2014
 
 ###7. 这时再次查看github的代码，[Assignment2](https://github.com/vis2014/Assignment2)，在自己的分支里就可以看到自己的代码了
