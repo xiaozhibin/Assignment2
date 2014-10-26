@@ -1,3 +1,4 @@
+#       just for  fun
 #下面介绍github的使用方法：
 ###1. github地址：[Assignment2](https://github.com/vis2014/Assignment2).
 
