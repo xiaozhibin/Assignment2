@@ -1,23 +1,20 @@
-#下面介绍github的使用方法：
-###1. github地址：[Assignment2](https://github.com/vis2014/Assignment2).
+#新浪微博名人关系图：
+###1. github地址：[zhounan_houjianpeng_Assignment2](https://github.com/vis2014/Assignment2).
 
-###2. 安装git：
-+ git工具用来获取远程代码以及提交代码。
-+ 下载地址： [git](http://git-scm.com/downloads) 。
+###2. 项目说明
++ 本图主要反映的是新浪微博名人用户的相互关注情况
++ 对数据进行模糊处理后，隐去了真实姓名以用户ID代替 。
 
-###3. 获取github上的代码：
-+ 在一个单独的文件夹中，例如E:\git，按住shift同时右键，选择在此处打开命令窗口。依次输入以下命令
-+ git clone https://github.com/vis2014/Assignment2.git		//克隆代码,username是vis2014@163.com, password是vis_2014
-+ cd Assignment2		//进入文件夹Assignment2
-+ git checkout –b *local_name* origin/master	//创建自己的分支，*注意*：local_name替换为自己的名字，格式为LastnameFirstname_LastnameFirstname_A2 
+###3. 项目结构介绍：
++ weibo.html是显示图片的文件，打开该文件查看图片
++ js文件夹中有引用的所有javascript文件,包括:weibo.js 、d3.js。weibo.js中编写绘图的所有逻辑函数，d3.js封装了绘图引擎类库
++ css文件夹中包含引用的css文件weibo.css。在该文件中定义了所有引用的样式
++ cpp文件下包含一个用于生成渐变色RGB值的cpp文件（get_gradient.cpp）
++ py文件夹下有：generate.py、update.py。generate.py用于处理原始数据删掉关联度较低的点，并生成反映用户连接的边。update.py根据每个点的度数生成点的半径值，并为相同兴趣组的用户赋予相同的颜色，在同一个组内根据用户的连接度数设置不同的颜色渐变。分别运行以上两个py文件后将生成最终的数据文件net.json
++ net.json是绘图所依据的数据文件
 
-###4. 在Assignment2文件夹中放入自己的完整的代码，包括引用的javascript库等
+###4. 图像描述
++ 生成的图片反映的是新浪微博名人用户的相互关注情况。其中每一个点代表一个微博名人用户，边反映的是用户之间的关注情况。点的半径越大代表关注该用户的人数越多。其中每个用户根据其关注内容关键词的不同分为几个不同的兴趣组（group）。每一个组内为同一个色系，其中颜色越深代表关注他的人越多（我们将同一用户组中的用户根据关注人数多少划分为3个不同层次），不同的兴趣组用不同色系的颜色区分开
 
-###5. 修改readme.md文件，在该文件里写作业的介绍，编写该文件使用的是markdown语法，可以上网上查语法格式，也可以参考这篇文章[markdown语法说明](http://wowubuntu.com/markdown/basic.html)
-
-###6. 在以上步骤完成之后可以上传代码，按住shift同时右键，选择在此处打开命令窗口。依次输入以下命令
-+ git add . 	//添加文件
-+ git commit -m "注释" //提交到本地
-+ git push origin *local_name*	//*注意*：和第三步一样，local_name替换为自己的名字，格式为LastnameFirstname_LastnameFirstname_A2，要和上面的local_name保持一致,username是vis2014@163.com, password是vis_2014
-
-###7. 这时再次查看github的代码，[Assignment2](https://github.com/vis2014/Assignment2)，在自己的分支里就可以看到自己的代码了
+###5. 数据描述
++ net.json中包含两类数据:nodes、links。nodes代表用户，每一个用户有name（模糊处理）、group，度数，半径以及在该用户所属兴趣组中的层次。links代表用户之间的关注，用source、target来确定关注的方向。原始数据有10000以上的用户，50000多条边，为了画图美观我们选取了其中500名作为抽样。
