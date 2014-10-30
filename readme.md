@@ -1,5 +1,5 @@
 #Network of Macaque's Brain Using Force Layout
-###1. GithubAddress：[Liwenchao_A2](https://github.com/vis2014/Assignment2/tree/Liwenchao_A2 "LiWenchao Assignment2").
+###1. GithubAddress：[LiWenchao_A2](https://github.com/vis2014/Assignment2/tree/LiWenchao_A2 "LiWenchao Assignment2").
 
 ###2. Package Description
 It includes:
