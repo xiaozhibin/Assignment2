@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Network of Macaque's Brain Using Force Layout</title>
+		<link type="text/css" rel="stylesheet" href="index.css"></link>
+	</head>
+	<body>
+		<h1>Network of Macaque's Brain in Force layout</h1>
+		<div class="instructions">
+			<h3>Instructions:</h3>
+			<ul>
+			    <li>Point to the node to zoom in and see its name</li>
+			    <li>Click one node, then its relevant nodes and links will be emphasized</li>
+			    <li>A node will be fixed after dragging it to a position</li>
+			    <li>Double-click to release the node and restore related links</li>
+			</ul>
+			<label for="circle-size"><b>Nodes' Size: </b></label>
+			<input name="circle-size" id="circle-size" type="text" style=" width:20px; text-align:center" value="3" readonly="true" />
+			<input id="substract-btn" type="button" value=" - " onclick="subtractSize()" />
+			<input id="add-btn" type="button" value=" + " onclick="addSize()" />
+		</div>
+		<script type="text/javascript" src="js/d3.js"></script>
+		<script type="text/javascript" src="js/force.js"></script>
+	</body>
+</html>

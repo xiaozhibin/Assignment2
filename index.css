@@ -1,0 +1,35 @@
+body {
+	font-family: "Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB";
+    margin: 0 auto;
+}
+
+.instructions {
+	float: left;
+	width: 250px;
+    padding-left: 20px;
+}
+
+.instructions ul{
+    padding-left: 20px;
+}
+
+.instructions li{
+    padding: 5px 0px;
+}
+
+.links {
+    stroke: #cccccc;
+    stroke-width: 1px;
+}
+
+.circles {
+    cursor: move;
+    fill: #555555;
+    stroke: #ffffff;
+    stroke-width: 2px;
+}
+
+.nodes text {
+    pointer-events: none;
+    font-size: 10px;
+}
