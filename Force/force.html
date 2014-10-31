@@ -1,17 +1,21 @@
 <html>
     <head>
     <meta charset="utf-8">
-    <title>SongOfIceAndFire</title>
+    <title>Force</title>
     <script src="JS/d3.js" charset="utf-8"></script>
     <link type="text/css" rel="stylesheet" href="CSS/force.css"/>
    </head>
 <body>
+<div id="tooltip" class="hidden">
+    <p><strong>简介</strong></p>
+    <p><span id="value"></span></p>
+</div>
  Picture Style:
  <select name="picStyle" id="picStyle" onchange="refresh()">
      <option value="circle" selected>circle</option>
     <option value="hexagon">hexagon</option>
 </select>
- Net Style:
+ <!--Net Style:-->
  <!--<select name="netStyle" id="netStyle" onchange="refresh()">-->
      <!--<option value="force" selected>force</option>-->
      <!--<option value="tree">tree</option>-->
