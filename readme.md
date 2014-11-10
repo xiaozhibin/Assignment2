@@ -20,7 +20,7 @@ The file includes:
 
 
 ###4. Analysis of the Network Visualization
-+ The different colors of the nodes show the different group of the person and the 
++ The different colors of the nodes show the different group of the person  
 + After selecting one node, we can easier to find the relevant nodes with the help of the emphasized nodes and linksby changing colors. 
 + Besides, the fisheye function help us easy to observe micro and macro features in the graph.
 
