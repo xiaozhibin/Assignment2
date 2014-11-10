@@ -1,15 +1,16 @@
-#Network of Macaque's Brain Using Force Layout
-###1. GithubAddress：[liuzengchaoqian_xiaozhibin_A2](https://github.com/vis2014/Assignment2/blob/liuzengchaoqian_xiaozhibin_A2").
+Network 
+============
+###1. GithubAddress：[liuzengchaoqian_xiaozhibin_A2](https://github.com/vis2014/Assignment2/tree/liuzengchaoqian_xiaozhibin_A2").
 
 ###2. Package Description
 It includes:
 
-+ force.html: The main html to embed D3 script.
++ force.html: The main html.
 + force.css: CSS of the network visualization and the main page.
 + js/d3.js: D3 library.
 + js/force.js: The D3 script to read network data and create visualization.
 + data/graph.json: Data(graph) of Macaque's brain.
-+ Screenshot: Three screenshots of this visualization.
++ screenshot: Three screenshots of this visualization.
 
 ###3. Operation of the Network Visualization 
 + Point to the node to zoom in and see its name.
