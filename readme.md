@@ -1,23 +1,22 @@
-Network 
+The co-occurence in LES Miserables
 ============
 ###1. GithubAddress：[liuzengchaoqian_xiaozhibin_A2](https://github.com/vis2014/Assignment2/tree/liuzengchaoqian_xiaozhibin_A2").
 
-###2. Package Description
-It includes:
+###2. Description
+The file includes:
 
 + force.html: The main html.
-+ force.css: CSS of the network visualization and the main page.
-+ js/d3.js: D3 library.
-+ js/force.js: The D3 script to read network data and create visualization.
-+ data/graph.json: Data(graph) of Macaque's brain.
-+ screenshot: Three screenshots of this visualization.
++ d3.js: D3 library.
++ force.js: The D3 script to read network data and create visualization.
++ miserables.json: Data of the co-occurence in LES Miserables.
++ screenshot: Some screenshots of our visualization.
 
-###3. Operation of the Network Visualization 
-+ Point to the node to zoom in and see its name.
-+ Click one node, then its relevant nodes and links will be emphasized.
-+ A node will be fixed after dragging it to a position.
-+ Double-click to release the node and restore related links.
-+ Click the "+" or the "-" button to change the size of the nodes.
+###3. Design of the Network Visualization 
++ When focus on a node ,its name will be showed.
++ 'When darg one node, then its relevant nodes and links will be emphasized by changing colors'.
++ 'When the mouse move over an area, the related area will be enlarged(just like watch throgh the fisheye)'. 
++ Different colors of the nodes show the different group of each person.
+
 
 ###4. Usage and Analysis
 + The sizes of the nodes in the network are initially not the same due to their different weights. We can infer that the "n0", "n1", "n3", "n9", "n16", "n22", "n23", "n27", "n54", "n55", "n63" which in larger size are somehow important.
