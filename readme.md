@@ -1,6 +1,5 @@
-#下面介绍github的使用方法：
-###1. github地址：[Assignment2](https://github.com/vis2014/Assignment2).
-
+#可视化作业：
+###1. 作业地址：[liuzengchaoqian_xiaozhibin_A2](https://github.com/vis2014/Assignment2/tree/liuzengchaoqian_xiaozhibin_A2).
 ###2. 安装git：
 + git工具用来获取远程代码以及提交代码。
 + 下载地址： [git](http://git-scm.com/downloads) 。
