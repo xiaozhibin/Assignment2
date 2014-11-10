@@ -64,7 +64,7 @@ d3.json("miserable.json", function(error, graph) {
 
     node.append("title")
         .text(function(d) { return d.name; });
-    node.attr("title",function(d){return d.index+ d.name});
+    
 
     force.on("tick", function() {
         link

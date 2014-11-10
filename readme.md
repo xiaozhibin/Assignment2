@@ -1,4 +1,4 @@
-﻿The co-occurence in LES Miserables
+﻿﻿The co-occurence in LES Miserables
 ============
 ###1. GithubAddress：[liuzengchaoqian_xiaozhibin_A2](https://github.com/vis2014/Assignment2/tree/liuzengchaoqian_xiaozhibin_A2").
 
@@ -7,6 +7,7 @@ The file includes:
 
 + force.html: The main html.
 + d3.js: D3 library.
++ fisheye.js: fisheye library
 + style.css: define the appearance of the html.
 + force.js: The D3 script to read network data and create visualization.
 + miserables.json: Data of the co-occurence in LES Miserables.
