@@ -13,8 +13,8 @@ The file includes:
 
 ###3. Design of the Network Visualization 
 + When focus on a node ,its name will be showed.
-+ 'When darg one node, then its relevant nodes and links will be emphasized by changing colors'.
-+ 'When the mouse move over an area, the related area will be enlarged(just like watch throgh the fisheye)'. 
++ `When darg one node, then its relevant nodes and links will be emphasized by changing colors`.
++ `When the mouse move over an area, the related area will be enlarged(just like watch throgh the fisheye)`. 
 + Different colors of the nodes show the different group of each person.
 
 
