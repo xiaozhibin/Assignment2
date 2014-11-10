@@ -1,6 +1,6 @@
 ﻿﻿The co-occurence in LES Miserables
 ============
-###1. GithubAddress：[liuzengchaoqian_xiaozhibin_A2](https://github.com/vis2014/Assignment2/tree/liuzengchaoqian_xiaozhibin_A2").
+###1. GithubAddress：[liuzengchaoqian_xiaozhibin_A2](https://github.com/vis2014/Assignment2/tree/liuzengchaoqian_xiaozhibin_A2).
 
 ###2. Description
 The file includes:
