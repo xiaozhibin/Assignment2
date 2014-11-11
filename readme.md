@@ -10,7 +10,7 @@ The file includes:
 + fisheye.js: fisheye library
 + style.css: define the appearance of the html.
 + force.js: The D3 script to read network data and create visualization.
-+ mousevisual.json: Data of the co-occurence in LES Miserables.
++ mousevisualcortex.json: Data of the co-occurence in LES Miserables.
 + screenshot: Some screenshots of our visualization.
 
 ###3. Design of the Network Visualization 
@@ -27,4 +27,4 @@ The file includes:
 
 ###5. Data
 + Data type: JSON.
-+ [Network of Mouse brain cortex](http://mrbrain.cs.jhu.edu/graph-services/download/): The data is transformed to "mousevisual.json".
++ [Network of Mouse brain cortex](http://mrbrain.cs.jhu.edu/graph-services/download/): The data is transformed to "mousevisualcortex.json".
