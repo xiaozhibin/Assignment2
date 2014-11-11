@@ -4,8 +4,8 @@ var width = 960,
 var color = d3.scale.category20();
 
 var force = d3.layout.force()
-    .charge(-200)
-    .linkDistance(40)
+    .charge(-30)
+    .linkDistance(20)
     .size([width, height]);
 
 
@@ -15,13 +15,13 @@ var svg = d3.select("body").append("svg")
 
 var fisheye = d3.fisheye.circular()
     .radius(80)
-    .distortion(2.4);
+    .distortion(1.7);
 
 var drag = force.drag()
     .on("dragstart", dragstart)
     .on("dragend",dragend);
 
-d3.json("miserable.json", function(error, graph) {
+d3.json("mousevisualcortex.json", function(error, graph) {
 
     dataset = graph;
     force
@@ -34,13 +34,11 @@ d3.json("miserable.json", function(error, graph) {
         .enter().append("line")
         .attr("class", function(d) { return "links" + " node" + d.source.index + " node" + d.target.index})
         .style("stroke","#999999")
-        .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+        .style("stroke-width", function(d) { return Math.sqrt(d.value)+0.4; });
 
     var node = svg.selectAll(".nodes")
         .data(graph.nodes)
         .enter()
-        .append("g")
-        .attr("class", "nodes")
         .append("circle")
         .attr("class", function(d) { return "circles" + d.index })
         .attr("r",5+"px")
@@ -64,7 +62,6 @@ d3.json("miserable.json", function(error, graph) {
 
     node.append("title")
         .text(function(d) { return d.name; });
-    
 
     force.on("tick", function() {
         link
@@ -82,7 +79,7 @@ function dragstart(d){
         if (d.index == dataset.links[i].source.index || d.index == dataset.links[i].target.index ) {
             svg.selectAll(".node" + d.index)
                 .style("stroke", "blue")
-                .style("stroke-width", function(d) { return Math.sqrt(d.value)+0.2; });
+                .style("stroke-width", function(d) { return Math.sqrt(d.value)+0.6; });
             if (d.index == dataset.links[i].source.index) {
                 svg.select(".circles" + dataset.links[i].target.index)
                     .style("fill", "red");
@@ -99,5 +96,5 @@ function dragstart(d){
         });
     svg.selectAll(".links")
         .style("stroke","#999999")
-        .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+        .style("stroke-width", function(d) { return Math.sqrt(d.value)+0.4; });
 }
