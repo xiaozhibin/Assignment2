@@ -1,4 +1,4 @@
-﻿﻿﻿Network of the Mouse visual cortex 
+﻿﻿﻿﻿Network of the Mouse visual cortex 
 ============
 ###1. GithubAddress：[liuzengchaoqian_xiaozhibin_A2](https://github.com/vis2014/Assignment2/tree/liuzengchaoqian_xiaozhibin_A2).
 
@@ -14,16 +14,16 @@ The file includes:
 + screenshot: Some screenshots of our visualization.
 
 ###3. Design of the Network Visualization 
-+ When focus on a node ,its name will be showed.
-+ `When darg one node, then its relevant nodes and links will be emphasized by changing colors`.
++ When focusing on a node ,its name will be showed.
++ `When darging one node, then its relevant nodes and links will be emphasized by changing colors`.
 + `When the mouse move over an area, the related area will be enlarged(just like watch throgh the fisheye)`. 
 + Different colors of the nodes show the different kinds of the Mouse brain cortex cells.
 
 
 ###4. Analysis of the Network Visualization
-+ The different colors of the nodes show the different kinds of cells the Mouse brain cortex cells. 
-+ After selecting one node, we can easier to find the relevant nodes with the help of the emphasized nodes and links by changing colors. 
-+ Besides, the fisheye function help us easy to observe micro and macro features in the network.
++ The different colors of the nodes show the different kinds of the Mouse brain cortex cells. 
++ After selecting one node, we can easily find the relevant nodes with the help of the emphasized nodes and links by changing colors. 
++ Besides, the fisheye function helps us to observe micro and macro features in the network easily.
 
 ###5. Data
 + Data type: JSON.
